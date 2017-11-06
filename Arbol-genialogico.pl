@@ -28,4 +28,4 @@ hermano(bruno,facundo).
 hermano(rosa,miguel).
 hermano(miguel,rosa).
 
-abuelo(X,Z):- padre(Y,Z) , (padre(Y,Z);maddre(Y,Z)).
+abuelo(X,Z):- padre(Y,Z) , (padre(Y,Z);madre(Y,Z)).
