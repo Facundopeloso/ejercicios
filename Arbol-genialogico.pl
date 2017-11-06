@@ -10,46 +10,22 @@ persona(sonia).
 persona(elvira).
 persona(antonio).
 
-esPadre(roberto,facundo).
-esPadre(roberto,bruno).
-esPadre(miguel,brenda).
-esPadre(luis,roberto).
-esPadre(antonio,rosa).
-esPadre(antonio,rosa).
+padre(roberto,facundo).
+padre(roberto,bruno).
+padre(miguel,brenda).
+padre(luis,roberto).
+padre(antonio,rosa).
+padre(antonio,rosa).
 
-esMadre(rosa,facundo).
-esMadre(rosa,bruno).
-esMadre(sonia,brenda).
-esMadre(carmen,roberto).
-esMadre(elvira,rosa).
+madre(rosa,facundo).
+madre(rosa,bruno).
+madre(sonia,brenda).
+madre(carmen,roberto).
+madre(elvira,rosa).
 
-esHermano(facundo,bruno).
-esHermano(bruno,facundo).
-esHermano(rosa,miguel).
-esHermano(miguel,rosa).
+hermano(facundo,bruno).
+hermano(bruno,facundo).
+hermano(rosa,miguel).
+hermano(miguel,rosa).
 
-esTio(miguel,facundo).
-esTio(miguel,bruno).
-esTio(roberto,brenda).
-
-esTia(rosa,brenda).
-esTia(sonia,bruno).
-esTia(sonia,facundo).
-
-esPrimo(brenda,facundo).
-esPrimo(brenda,bruno).
-esPrimo(facundo,brenda).
-esPrimo(bruno,brenda).
-
-esAbuelo(antonio,facundo).
-esAbuelo(antonio,bruno).
-esAbuelo(antonio,brenda).
-esAbuelo(luis,facundo).
-esAbuelo(luis,bruno).
-
-esAbuela(elvira,facundo).
-esAbuela(elvira,bruno).
-esAbuela(elvira,brenda).
-esAbuela(carmen,bacundo).
-esAbuela(carmen,bruno).
-
+abuelo(X,Z):- padre(Y,Z) , (padre(Y,Z);maddre(Y,Z)).
